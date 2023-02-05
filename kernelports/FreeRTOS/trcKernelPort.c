@@ -317,8 +317,7 @@ uint32_t prvTraceGetStackHighWaterMark(void* task)
 #endif /* defined(TRC_CFG_ENABLE_STACK_MONITOR) && (TRC_CFG_ENABLE_STACK_MONITOR == 1) && (TRC_CFG_SCHEDULING_ONLY == 0) */
 
 #if (TRC_CFG_RECORDER_MODE == TRC_RECORDER_MODE_STREAMING)
-	
-static void* pCurrentTCB = NULL;
+
 
 /* Monitored by TzCtrl task, that give warnings as User Events */
 extern volatile uint32_t NoRoomForSymbol;
